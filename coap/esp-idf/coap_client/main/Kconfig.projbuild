@@ -1,0 +1,10 @@
+menu "Ejemplo CoAP cliente"
+    config COAP_SERVER_URI
+        string "URI del servidor CoAP"
+        default "coap://192.168.1.10"
+        help
+            Servidor TypeScript (npm run servidor en coap/ts) o el ESP32 con coap_server.
+    config TEMP_UMBRAL
+        int "Umbral de temperatura (°C) para encender el LED remoto"
+        default 23
+endmenu

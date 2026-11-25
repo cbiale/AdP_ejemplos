@@ -1,0 +1,5 @@
+menu "Ejemplo CoAP"
+    config LED_GPIO
+        int "GPIO del LED"
+        default 2
+endmenu

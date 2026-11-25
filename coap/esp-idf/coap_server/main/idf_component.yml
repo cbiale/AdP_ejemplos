@@ -1,0 +1,4 @@
+# libcoap empaquetado por Espressif (se descarga solo en el primer build)
+dependencies:
+  idf: ">=5.1"
+  espressif/coap: "^4.3.5"

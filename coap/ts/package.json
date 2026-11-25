@@ -1,0 +1,27 @@
+{
+  "name": "ejemplos-coap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "servidor": "tsx src/servidor.ts",
+    "servidor-multicast": "tsx src/servidor-multicast.ts",
+    "descubrir": "tsx src/1-descubrimiento.ts",
+    "get": "tsx src/2-get-con-non.ts",
+    "put": "tsx src/3-put-led.ts",
+    "post": "tsx src/4-post-delete.ts",
+    "fetch": "tsx src/5-fetch-ipatch.ts",
+    "bloques": "tsx src/6-bloques.ts",
+    "observe": "tsx src/7-observe.ts",
+    "multicast": "tsx src/8-multicast.ts"
+  },
+  "dependencies": {
+    "coap": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

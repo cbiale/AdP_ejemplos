@@ -1,3 +1,16 @@
+menu "Wi-Fi"
+    config WIFI_SSID
+        string "SSID (nombre de la red)"
+        default "mi-red"
+        help
+            El ESP32 clásico solo se conecta a redes de 2,4 GHz.
+    config WIFI_PASSWORD
+        string "Clave"
+        default ""
+        help
+            Vacía para una red abierta. Queda en sdkconfig, que no se sube al repositorio.
+endmenu
+
 menu "Ejemplo CoAP cliente"
     config COAP_SERVER_URI
         string "URI del servidor CoAP"

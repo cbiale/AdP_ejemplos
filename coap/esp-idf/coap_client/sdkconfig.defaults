@@ -1,4 +1,2 @@
-CONFIG_EXAMPLE_CONNECT_WIFI=y
-CONFIG_EXAMPLE_CONNECT_ETHERNET=n
 # libcoap necesita conocer la dirección destino de cada datagrama
 CONFIG_LWIP_NETBUF_RECVINFO=y

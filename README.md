@@ -29,8 +29,10 @@ Requiere ESP-IDF 5.1 o superior. En cada proyecto:
 
 ```bash
 idf.py set-target esp32      # o esp32s3, esp32c3...
-idf.py menuconfig            # Wi-Fi en "Example Connection Configuration"
+idf.py menuconfig            # SSID y clave en el menú "Wi-Fi"
 idf.py build flash monitor
 ```
+
+La conexión Wi-Fi está escrita a mano en `main/wifi.c` de cada proyecto, con un comentario por paso. El ESP32 clásico solo se conecta a redes de 2,4 GHz.
 
 La temperatura es simulada; reemplazarla por la lectura de un sensor real.
